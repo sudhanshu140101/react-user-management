@@ -16,5 +16,4 @@ Features :
 Display list of users with names and emails.
 Click on a user to see detailed information.
 Dynamic routing using react-router-dom.
-Clean component structure (UserList.jsx, UserDetails.jsx).
->>>>>>> 7bbafafb344df65ae8f0ad9afc25b9a6232a5895
+

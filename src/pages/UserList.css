@@ -1,0 +1,260 @@
+/* Main App Container */
+.app-container {
+  padding: 20px 0;
+  background: linear-gradient(135deg, #e8f5e8 0%, #b8e6b8 100%);
+  min-height: 100vh;
+}
+
+/* Loading Container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 20px;
+}
+
+.loading-text {
+  color: #666 !important;
+  font-weight: 300 !important;
+}
+
+/* Header Paper */
+.header-paper {
+  margin-bottom: 20px !important;
+  border-radius: 16px !important;
+  background: linear-gradient(45deg, #4caf50, #81c784) !important;
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3) !important;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.people-icon {
+  font-size: 2.2rem !important;
+  color: white;
+}
+
+.main-title {
+  color: white !important;
+  font-weight: 700 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Refresh Button */
+.refresh-button {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 2px solid white !important;
+  border-radius: 25px !important;
+  padding: 10px 24px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.refresh-button:hover {
+  background: white !important;
+  color: #4caf50 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Stats Container */
+.stats-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.stats-chip {
+  font-weight: 600 !important;
+  padding: 4px 8px !important;
+}
+
+/* List Paper */
+.list-paper {
+  border-radius: 16px !important;
+  overflow: hidden;
+  margin-bottom: 20px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+.user-list {
+  padding: 0 !important;
+}
+
+/* List Item */
+.list-item {
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.list-item:hover {
+  background: rgba(76, 175, 80, 0.05) !important;
+  transform: scale(1.02);
+}
+
+/* List Button */
+.list-button {
+  padding: 16px 20px !important;
+  gap: 16px;
+  flex-grow: 1;
+  transition: all 0.3s ease !important;
+}
+
+.list-button:hover {
+  background: transparent !important;
+}
+
+/* User Avatar */
+.user-avatar {
+  background: linear-gradient(45deg, #4caf50, #81c784) !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  width: 50px !important;
+  height: 50px !important;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.list-item:hover .user-avatar {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* User Text */
+.user-name {
+  color: #333 !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  transition: color 0.3s ease;
+}
+
+.user-username {
+  color: #666 !important;
+  font-size: 0.9rem !important;
+  font-style: italic;
+}
+
+.list-item:hover .user-name {
+  color: #4caf50 !important;
+}
+
+/* Arrow Icon */
+.arrow-icon {
+  color: #bbb !important;
+  font-size: 1rem !important;
+  transition: all 0.3s ease;
+}
+
+.list-item:hover .arrow-icon {
+  color: #4caf50 !important;
+  transform: translateX(5px);
+}
+
+/* Favorite Button */
+.favorite-button {
+  color: #ddd !important;
+  transition: all 0.3s ease !important;
+  margin-right: 8px;
+}
+
+.favorite-button:hover {
+  color: #e91e63 !important;
+  transform: scale(1.2);
+}
+
+.favorite-active {
+  color: #e91e63 !important;
+}
+
+/* List Divider */
+.list-divider {
+  margin: 0 20px !important;
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Footer Paper */
+.footer-paper {
+  padding: 16px !important;
+  text-align: center;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.footer-text {
+  color: #666 !important;
+  font-weight: 500 !important;
+  font-style: italic;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header-box {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .main-title {
+    font-size: 1.8rem !important;
+  }
+
+  .people-icon {
+    font-size: 1.8rem !important;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 15px 0;
+  }
+
+  .main-title {
+    font-size: 1.5rem !important;
+  }
+
+  .list-button {
+    padding: 14px 16px !important;
+  }
+
+  .user-avatar {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.list-item {
+  animation: fadeInUp 0.5s ease-out;
+}
